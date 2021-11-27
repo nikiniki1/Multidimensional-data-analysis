@@ -9,16 +9,16 @@ if __name__ == "__main__":
 
         obj = lab_1(table)
         obj.distribution = scipy.stats.lognorm
-        # obj.task4('lognorm')
+        obj.task4('lognorm')
         
         for key in ['total_cases', 'total_deaths', 'total_vaccinations', 'total_tests']:
 
                 obj.dt = obj.dataset[key]
-                # obj.task2(obj.dt, True)
-                # obj.task3(obj.dt,key)
+                obj.task2(obj.dt, True)
+                obj.task3(obj.dt,key)
                 
 
-                # x = np.linspace(0, obj.dt.max(), len(obj.dt))
-                # obj.task5(x)
-                # obj.task6(x)
+                x = np.linspace(0, obj.dt.max(), len(obj.dt))
+                obj.task5(x)
+                obj.task6(x)
                 obj.task7('lognorm',key)
