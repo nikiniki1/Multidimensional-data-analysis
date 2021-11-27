@@ -11,10 +11,10 @@ if __name__ == "__main__":
         obj = lab_2(table)
         for key in ['total_cases', 'total_deaths', 'total_vaccinations', 'total_tests']:
             obj.dt = obj.dataset[key]
-            # obj.task1(obj.dt, True)
-            # obj.matr()
-            # obj.task2(key)
-            # obj.task3(key)
-            # obj.task4(key)
-            # obj.task5()
+            obj.task1(obj.dt, True)
+            obj.matr()
+            obj.task2(key)
+            obj.task3(key)
+            obj.task4(key)
+            obj.task5()
         obj.task6_7()
